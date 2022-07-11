@@ -1,0 +1,29 @@
+Cypress esta basado sobre JS y npm
+Se puede instalar sin npm, pero en todos sitios se indica contraproducente
+En esta prueba se probara a usar npm y comprobar el funcionamiento
+
+1- Instalacion (teniendo npm en el sistema) usando "npm install cypress --save-dev"
+Se genera el package-lock.json y la carpeta node_modules, conteniendo cypress
+
+2- Para abrir el gestor de Cypress, usar el comando ".\node_modules\.bin\cypress open"
+o "/node_modules/.bin/cypress open" para el caso de Linux
+Alternativamente, usar "npx cypress open" (ha sido siempre bastante mas rapido)
+
+3- Seleccionamos la opcion de E2E, y se generan varios archivos indicados:
+"cypress.config.js", "cypress\support\e2e.js", "cypress\support\commands.js", "cypress\fixtures\example.json"
+Las pruebas se realizaran en Chrome, asi que se indica tal en la interfaz cuando lo solicita
+
+4- Seleccionamos "Create new empty spec", que indica que permitira 
+generar un nuevo test
+Por defecto, genera "cypress\e2e\spec.cy.js"
+
+5- Parece que si cambiamos cosas del test, las actualiza en tiempo real
+en la aplicacion lanzada
+
+6- Lanzada la aplicacion de la forma habitual haciendo uso de Docker,
+el test basico modificado permite acceder sin problemas al localhost:8000
+
+7- Al introducir comandos incorrectos, no falla si no hay errores graves
+(p.e. emplear una funcion con nomenclatura incorrecta)
+
+8- Probamos a lanzar algunos tests basicos, todo funciona correctamente
