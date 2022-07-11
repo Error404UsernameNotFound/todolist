@@ -55,4 +55,11 @@ desde las GithubActions, y grabarlo a la Dashboard
 2- El proyecto necesita un package.json para npm, lo que require haber
 hecho un "npm init"
 
-3-
+3- Especificando las actions concretas de Cypress, lanza los tests sin 
+problema, y pasan adecuadamente
+
+4- Para lanzar el resultado de los tests a la Dashboard, se requiere 
+especificar el comando que lanzamos antes en local:
+cypress run --record --key d33677bd-995d-4154-8a32-8cd58518d8cf
+Se puede configurar como variable de entorno (CYPRESS_RECORD_KEY)
+
