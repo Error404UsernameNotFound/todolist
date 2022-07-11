@@ -1,0 +1,23 @@
+{
+  "name": "todolist_cypress_con_node",
+  "version": "1.0.0",
+  "description": "***\r This code repo contains the code developed for a Go rest API consisting of a simple ToDoList service.",
+  "main": "cypress.config.js",
+  "dependencies": {
+    "cypress": "^10.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Error404UsernameNotFound/todolist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Error404UsernameNotFound/todolist/issues"
+  },
+  "homepage": "https://github.com/Error404UsernameNotFound/todolist#readme"
+}
