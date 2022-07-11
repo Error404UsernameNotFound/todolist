@@ -27,3 +27,27 @@ el test basico modificado permite acceder sin problemas al localhost:8000
 (p.e. emplear una funcion con nomenclatura incorrecta)
 
 8- Probamos a lanzar algunos tests basicos, todo funciona correctamente
+
+
+DASHBOARD
+
+1- Probamos a conectar a la Dashboard de manera similar al proyecto sin node
+La cuenta ya ha quedado linkeada a mi maquina
+
+2- El proyecto en si hay que conectarlo de manera independiente a la Dashboard
+En este caso, no creamos el proyecto en la pagina web y lo linkeamos, si no 
+que probamos a linkearlo directamente
+(Pide darle a create new desde la propia app)
+
+3- Se modifica el archivo "cypress.config.js", agregando el projectId (?)
+
+4- Grabamos un test a la Dashboard con el comando suministrado:
+npx cypress run --record --key d33677bd-995d-4154-8a32-8cd58518d8cf
+
+5- Se genera un video, pero en local, en la carpeta cypress\videos
+
+
+GITHUB ACTIONS
+
+1- Probamos a lanzar un .yml con instrucciones para lanzar los tests
+desde las GithubActions, y grabarlo a la Dashboard
