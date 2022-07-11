@@ -51,3 +51,8 @@ GITHUB ACTIONS
 
 1- Probamos a lanzar un .yml con instrucciones para lanzar los tests
 desde las GithubActions, y grabarlo a la Dashboard
+
+2- El proyecto necesita un package.json para npm, lo que require haber
+hecho un "npm init"
+
+3-
