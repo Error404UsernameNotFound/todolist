@@ -63,3 +63,10 @@ especificar el comando que lanzamos antes en local:
 cypress run --record --key d33677bd-995d-4154-8a32-8cd58518d8cf
 Se puede configurar como variable de entorno (CYPRESS_RECORD_KEY)
 
+5- Agregando la variable de entorno CYPRESS_RECORD_KEY con la record 
+key suministrada por la pagina de Cypress para el proyecto, teniendo 
+la flag de "with: record: true", ya se lanza a la Dashboard
+
+*** Para que todo esto funcione y se lance el resultado de las Actions
+a la Dashboard es estrictamente necesario el empleo de node, ya que la 
+action hace uso del mismo internamente
