@@ -3,8 +3,10 @@ name: Cypress Tests using Cypress Docker Image
 on: [push]
 
 jobs:
-  build-and-push-images:
+  cypress-run:
     runs-on: ubuntu-latest
+    container: cypress/browsers:node12.18.3-chrome87-ff82
+
     env: 
       HOST_DB: localhost
       PORT_DB: 5432
@@ -22,10 +24,6 @@ jobs:
       - name: Lanzamiento docker-compose
         run: docker-compose up -d
 
-  cypress-run:
-    runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome87-ff82
-    steps:
       - name: Checkout
         uses: actions/checkout@v2
 
