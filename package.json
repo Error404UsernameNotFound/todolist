@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "***\r This code repo contains the code developed for a Go rest API consisting of a simple ToDoList service.",
   "main": "cypress.config.js",
-  "dependencies": {
+  "devDependencies": {
     "cypress": "^10.3.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

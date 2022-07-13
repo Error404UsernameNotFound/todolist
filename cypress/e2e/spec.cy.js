@@ -15,7 +15,7 @@ describe('Manejo de tareas', () => {
     cy.get('[id=myInput]').type("Regar mis cactuses")
     cy.get('[class=addBtn]').click()
 
-    cy.contains("Regar mis cactuses")
+    cy.contains("Regar mis cactuses patata")
   })
 
   it('Borra la tarea antes creada', () => {
